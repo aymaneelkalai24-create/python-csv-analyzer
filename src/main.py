@@ -8,7 +8,8 @@ def analyze_csv(file_path):
                 scores.append(float(row["score"]))
 
     print("Nombre d'étudiants :", len(scores))
-    print("Moyenne :", sum(scores) / len(scores))
+    average = sum(scores) / len(scores)
+    print("Moyenne :", round(average, 2))
     print("Score maximum :", max(scores))
     print("Score minimum :", min(scores))
 if __name__ == "__main__":
